@@ -14,10 +14,10 @@
         <span class="icon-ic_help_s"></span>
         <p>Help</p>
       </div>
-      <div class="user-item" @click="clickSubItem('github')">
+      <!--<div class="user-item" @click="clickSubItem('github')">
         <span class="icon-ic_github_s"></span>
         <p>Github</p>
-      </div>
+      </div>-->
       <div class="user-item" @click="clickSubItem('about')">
         <span class="icon-ic_about_s"></span>
         <p>About</p>
