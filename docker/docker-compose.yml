@@ -7,7 +7,7 @@ services:
     volumes:
       - ./data:/data/db
     ports:
-      - "27017:27017"
+      - "27012:27017"
     networks:
       - appnet
 
@@ -19,7 +19,7 @@ services:
       FABU_DB_HOST: mongo
       # FABU_BASE_URL: https://fabu.apppills.com 正式环境部署请打开注释，并修改为域名为自己的域名
       FABU_UPLOAD_DIR: /fabu/upload
-    ports: 
+    ports:
       - "8111:8111"
     volumes:
       - ./upload:/fabu/upload
@@ -34,4 +34,4 @@ networks:
       bridge
 
 
-  
+
