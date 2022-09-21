@@ -59,10 +59,10 @@
           <i class="icon-ic_help_s"></i>
           <span slot="title">Help</span>
         </el-menu-item>
-        <el-menu-item index="GitHub" @click="clickSubItem">
+        <!--<el-menu-item index="GitHub" @click="clickSubItem">
           <i class="icon-ic_github_s"></i>
           <span slot="title">GitHub</span>
-        </el-menu-item>
+        </el-menu-item>-->
         <el-menu-item index="About" @click="clickSubItem">
           <i class="icon-ic_about_s"></i>
           <span slot="title">About</span>
