@@ -39,7 +39,7 @@ demo地址: https://fabu.apppills.com/
 1. 下载源码  `git clone https://github.com/HeadingMobile/fabu.love.git`
 2. 执行`cd docker`
 3. 执行`docker-compose up -d --build`
-4. 打开浏览器 http://0.0.0.0:9898
+4. 打开浏览器 http://0.0.0.0:8111
 
 
 #### 本地运行
@@ -73,7 +73,7 @@ npm start
 =============>>out
 ...
 ...
-App is listening on 9898.
+App is listening on 8111.
 数据库连接成功
 =============>>end
 ```
@@ -90,7 +90,7 @@ npm run dev  #本地运行可以使用该命令
 ...
 ...
  DONE  Compiled successfully in 18546ms                                                
- I  Your application is running here: http://0.0.0.0:9898
+ I  Your application is running here: http://0.0.0.0:8111
 ============>>end
 ```
 
@@ -111,12 +111,12 @@ npm run dev  #本地运行可以使用该命令
 
 ```javascript
 //需要修改配置可以修改config.js文件,也可以在部署的时候导出环境变量
-//比如 export FABU_BASE_URL=https://127.0.0.1:9898
+//比如 export FABU_BASE_URL=https://127.0.0.1:8111
 
 const common = {
     //baseUrl应用请求的url地址,比如https://fabu.love
-    baseUrl: process.env.FABU_BASE_URL || "https://127.0.0.1:9898", 
-    port: process.env.FABU_PORT || "9898", //server运行的端口
+    baseUrl: process.env.FABU_BASE_URL || "https://127.0.0.1:8111", 
+    port: process.env.FABU_PORT || "8111", //server运行的端口
     apiPrefix: 'api',
     fileDir: process.env.FABU_UPLOAD_DIR || path.join(__dirname, ".."), //上传文件的存放目录
     secret: process.env.FABU_SECRET || "secretsecret", //secret
@@ -179,7 +179,7 @@ server{
   }
 
   location /api/ {  #把以api打头的接口转发给后端server
-    proxy_pass http://127.0.0.1:9898; #这里端口修改为后端服务运行的端口
+    proxy_pass http://127.0.0.1:8111; #这里端口修改为后端服务运行的端口
     proxy_set_header Host $host;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   }

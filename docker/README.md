@@ -43,7 +43,7 @@ services:
       FABU_BASE_URL: https://fabu.apppills.com  #这是服务器部署的地址，请换成自己的 本地运行demo可以删除本行
       FABU_UPLOAD_DIR: /fabu/upload 
     ports: 
-      - "9898:9898"
+      - "8111:8111"
     volumes:
       - ./upload:/fabu/upload
     depends_on:

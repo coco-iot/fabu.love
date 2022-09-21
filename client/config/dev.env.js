@@ -4,7 +4,7 @@ const prodEnv = require('./prod.env')
 
 
 // 本地运行时server端的地址
-var devServerHost = '"http://127.0.0.1:9898"'
+var devServerHost = '"http://127.0.0.1:8111"'
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',

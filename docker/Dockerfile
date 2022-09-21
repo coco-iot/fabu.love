@@ -23,7 +23,7 @@ RUN cnpm install
 # ADD client/dist /opt/web
 # ADD docker/nginx/fabulove.conf /etc/nginx/conf.d/fabulove.conf
 
-EXPOSE 9898
+EXPOSE 8111
 
 # ENTRYPOINT ["/opt/server/docker-entrypoint.sh"]
 CMD ["npm", "start"]

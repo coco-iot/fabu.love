@@ -26,7 +26,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm install  //安装依赖
 
 //配置前端接口请求的baseUrl和后端运行的端口号
-node app config -u https://fabu.love -p 9898
+node app config -u https://fabu.love -p 8111
 
 //启动项目
 node app start -i -b

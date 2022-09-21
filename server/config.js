@@ -3,8 +3,8 @@ var path = require("path")
 
 
 const common = {
-    baseUrl: process.env.FABU_BASE_URL || "https://127.0.0.1:9898", //baseUrl应用请求的url地址,比如https://fabu.love
-    port: process.env.FABU_PORT || "9898", //server运行的端口
+    baseUrl: process.env.FABU_BASE_URL || "https://127.0.0.1:8111", //baseUrl应用请求的url地址,比如https://fabu.love
+    port: process.env.FABU_PORT || "8111", //server运行的端口
     apiPrefix: 'api',
     fileDir: process.env.FABU_UPLOAD_DIR || path.join(__dirname, ".."), //上传文件的存放目录
     secret: process.env.FABU_SECRET || "secretsecret", //secret
