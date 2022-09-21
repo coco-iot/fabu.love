@@ -4,7 +4,7 @@
 
       <div class="user-logo"></div>
       <div class="user-divier"></div>
-      <div class="user-name">爱发布</div>
+      <div class="user-name">Curelean 工业应用云市场软件</div>
 
       <div class="user-item" style="margin-top: 24.87vh" @click="clickSubItem('api')">
         <span class="icon-ic_api_s"></span>

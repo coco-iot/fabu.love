@@ -8,3 +8,5 @@ docker/data/
 docker/upload/
 upload/
 temp/
+
+.DS_Store
