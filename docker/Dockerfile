@@ -1,8 +1,8 @@
 FROM node:10.15.3
 
 # 安装依赖库
-RUN npm install -g babel-cli --registry=https://registry.npm.taobao.org \
-    && npm install -g cnpm --registry=https://registry.npm.taobao.org
+RUN npm install -g babel-cli \
+    && npm install -g cnpm
 # 设置目录
 RUN mkdir -p /opt/data /opt/server /opt/web /opt/logs /var/cache/nginx/client_temp
 
